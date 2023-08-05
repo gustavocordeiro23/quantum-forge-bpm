@@ -1,0 +1,66 @@
+/* styles.css */
+
+/* ActionMenu styles */
+.action-menu {
+  display: flex;
+  background-color: #eeeeee;
+  padding: 2px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.action-button {
+  padding: 8px 12px;
+  background-color: #d3d3d3;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.action-button.active,
+.action-button:hover {
+  background-color: #b0b0b0;
+}
+
+.arrow-down {
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 6px solid #000;
+  margin-left: 6px;
+}
+
+/* Submenu styles */
+.submenu {
+  position: absolute;
+  top: 35px; /* Adjust this value to position the submenu correctly */
+  left: 0;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 2px;
+  display: none;
+}
+
+.submenu.active {
+  display: block;
+}
+
+.action-button:hover + .submenu {
+  display: block;
+}
+
+.submenu button {
+  display: block;
+  margin: 0;
+  padding: 6px 12px;
+  background-color: #d3d3d3;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.submenu button:hover {
+  background-color: #b0b0b0;
+}
